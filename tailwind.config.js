@@ -1,15 +1,29 @@
 module.exports = {
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'media', // 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        'accent-1': '#333',
+        'yale-blue': '#082D6A',
+        'french-blue': '#134780',
+        'sky-blue': '#B7D5EA',
+        'baby-pwoder': '#FAFAFA',
+        'red-salsa': '#FB3640',
+        'granite-gray': '#605FSE',
+        'yellow-1': '#FFB700',
+        'orange': '#F75C03',
+        'green-1': '#3EC300'
       },
+      backgroundImage: theme => ({
+        'header-network': "url(/HeaderNetwork.png)",
+        'footer-network': "url(/footer_network.png)"
+      })
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fontWeight: ['hover'],
+    },
   },
   plugins: [],
 }
