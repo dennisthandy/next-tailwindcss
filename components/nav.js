@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Drawer from "./Drawer"
+import Drawer from "./drawer"
 
 function Nav() {
 
